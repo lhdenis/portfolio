@@ -1,0 +1,35 @@
+:root { --header-h: 80px; } 
+
+.app-header {
+  position: fixed;
+  margin-top: 40px;
+  height: var(--header-h);
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+  border: 1px solid #e5e7eb71;
+  border-radius: 40px;
+  display: flex; 
+  align-items: center;
+  width: 30%;
+  transform: translateX(-50%); 
+  left: 50%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.onglets{
+ margin-right: 16px;   
+ display: flex;
+ gap: 32px;
+}
+
+.with-fixed-header {
+  padding-top: var(--header-h); 
+}
